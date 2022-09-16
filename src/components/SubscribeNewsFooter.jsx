@@ -6,7 +6,7 @@ import { TbSend } from "react-icons/tb";
 
 const SubscribeNewsFooter = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <div className="SNF_container3 py-5">
         <div className="SNF_container3-content">
           <h2 className="SNF_container3-title mt-5">Subscribe to Newsletter</h2>

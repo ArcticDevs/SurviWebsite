@@ -10,6 +10,8 @@
     white url("../assets/up_back.svg") no-repeat scroll 10% 0% / 500px
       padding-box border-box;
   padding: 100px 20px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .SNF_container3-content {
@@ -228,7 +230,10 @@
   .SNF_input {
     width: 100%;
     margin: -50px auto auto auto;
+    background: #fff url("../assets/email.jpg") no-repeat scroll -10px 40% / 60px
+    padding-box border-box;
   }
+
 
   .SNF_input-btn {
     width: 100%;
