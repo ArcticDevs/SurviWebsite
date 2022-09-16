@@ -1,15 +1,22 @@
-import React from 'react'
-import {Routes,Route} from 'react-router-dom'
-
-import Blog from './Pages/Blog.jsx'
+// import { lazy, Suspense } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Blog from './pages/Blog.jsx'
+import Home from './pages/Home';
+// const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
+  const location = useLocation();
   return (
-    <>
-      <Routes>
-        <Route exact path="/" element={<Blog/>} />
-      </Routes>
-    </>
+    <div className='app'>
+      <Navbar />
+      {/* <Suspense> */}
+        <Routes location={location} key={location.pathname}>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path="/blog" element={<Blog/>} />
+        </Routes>
+      {/* </Suspense> */}
+    </div>
   )
 }
 
