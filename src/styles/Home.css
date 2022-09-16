@@ -534,6 +534,7 @@
 
 .subscribe-form {
     width: 50%;
+    margin-top: 100px !important;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -618,5 +619,13 @@
 
     .section_4___row .card:nth-child(2) {
         margin-top: 100px !important;
+    }
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+    .blog_input-btn {
+        width: 100%;
+        margin: 0 !important;
     }
 }

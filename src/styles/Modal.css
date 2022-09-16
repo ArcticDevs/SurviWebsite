@@ -1,0 +1,84 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: none !important;
+    background: none !important;
+}
+
+.modal-dialog {
+    max-width: 700px !important;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: transparent !important;
+    background-clip: none !important;
+    border: none !important;
+    border-radius: none !important;
+    outline: 0;
+    padding: 0 !important;
+}
+
+.modal_content___box {
+    position: relative;
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between;
+}
+
+.modal button {
+    position: fixed;
+    display: block;
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    font-size: 60px;
+    color: rgb(224, 224, 224) !important;
+}
+
+.prev_btn{
+    top: 40%;
+    left: 5%;
+}
+.next_btn {
+    top: 40%;
+    right: 5%;
+}
+
+img.active {
+    filter: brightness(0.6);
+}
+
+.close_btn {
+    position: fixed;
+    right: 5%;
+    font-size: 25px !important;
+    top: 0%;
+}
+
+.carousel_cont {
+    position: relative;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.carousel_grid {
+    position: relative;
+    bottom: -20px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.carousel_grid img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

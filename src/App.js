@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Blog from './pages/Blog.jsx'
 import Home from './pages/Home';
 import BlogRead from './pages/BlogRead.jsx'
-import Footer from './components/Footer.jsx'
+// import Footer from './components/Footer.jsx'
 // const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
           <Route exact path="/post/:title" element={<BlogRead />} />
         </Routes>
       {/* </Suspense> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
