@@ -11,7 +11,7 @@ const App = () => {
   const location = useLocation();
   return (
     <div className='app'>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <Suspense> */}
         <Routes location={location} key={location.pathname}>
           <Route exact path='/' element={<Home />} />
