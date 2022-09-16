@@ -27,6 +27,7 @@ import project_4 from '../assets/project_4.jpeg'
 import project_5 from '../assets/project_5.jpg'
 import project_6 from '../assets/project_6.jpeg'
 import project_icon from '../assets/project_hover.png'
+import SlideModal from '../components/SlideModal';
 
 const Home = () => {
     return (
@@ -37,7 +38,8 @@ const Home = () => {
                     <h6 className='my-3'>Your stunning website is just a few clicks away. It's easy and free</h6>
                     <button type='button' className='btn bg-white text-warning rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button>
                 </div>
-                <img src={HomeImage} alt="home_image" />
+                <div className='parallax'></div>
+                {/* <img src={HomeImage} alt="home_image" /> */}
             </div>
             <div className="section_2">
                 <h1 className='text-center'>Our Services</h1>
@@ -135,9 +137,9 @@ const Home = () => {
                 </a>
             </div>
             <div className="section_4">
-                <div className="section_4___background"></div>
+                {/* <div className="section_4___background"></div> */}
                 <div className='row section_4___row text-center'>
-                    <div className="card col-lg-4 col">
+                    <div className="card col-4 col">
                         <div className="card-head">
                             <img src={service_quote} alt="" />
                         </div>
@@ -148,7 +150,7 @@ const Home = () => {
                             <h2 className='card-profile-job'>CEO at Compaxit</h2>
                         </div>
                     </div>
-                    <div className="card col-lg-4 col">
+                    <div className="card col-4 col">
                         <div className="card-head">
                             <img src={service_quote} alt="" />
                         </div>
@@ -159,7 +161,7 @@ const Home = () => {
                             <h2 className='card-profile-job'>CEO at Compaxit</h2>
                         </div>
                     </div>
-                    <div className='btn_card col-lg-4 col'>
+                    <div className='btn_card col-4 col'>
                         <h2>WHAT THAY SAY</h2>
                         <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                         <a href="/" className='section_3___service_btn'>
