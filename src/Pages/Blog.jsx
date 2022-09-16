@@ -108,7 +108,7 @@ const App = () => {
                             <div className="blog_container3-form mt-5">
                                 <input
                                     type="text"
-                                    maxlength="256"
+                                    maxLength="256"
                                     name="name-2"
                                     placeholder="Enter your email..."
                                     className="blog_input"

@@ -1,6 +1,7 @@
 // import { lazy, Suspense } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Blog from './pages/Blog.jsx'
 import Home from './pages/Home';
 // const Home = lazy(() => import('./pages/Home'));
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path="/blog" element={<Blog/>} />
         </Routes>
       {/* </Suspense> */}
+      <Footer />
     </div>
   )
 }
