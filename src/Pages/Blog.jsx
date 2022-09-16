@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SubscribeNewsFooter from "../Components/SubscribeNewsFooter";
+import SubscribeNewsFooter from "../components/SubscribeNewsFooter";
 import "../styles/Blog.css";
 import {useNavigate} from 'react-router-dom';
 
