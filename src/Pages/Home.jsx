@@ -142,7 +142,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='btn_card col-lg-4'>
-                        <h2>WHAT THAY SAY</h2>
+                        <h2>WHAT THEY SAY</h2>
                         <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                         <a href="/" className='section_3___service_btn'>
                             <div className="box">
