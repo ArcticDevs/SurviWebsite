@@ -5,6 +5,9 @@ import { BsCalendarPlus, BsClockHistory } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import SubscribeNewsFooter from "../components/SubscribeNewsFooter";
+import service_quote from '../assets/service_quote.png'
+import service_profile_1 from '../assets/service_profile_1.jpg'
+import service_profile_2 from '../assets/service_profile_2.jpg'
 
 const BlogRead = () => {
   const navigate = useNavigate();
@@ -190,47 +193,44 @@ const BlogRead = () => {
           </div>
         </div>
         <div className="section_4">
-          <div className="section_4___background"></div>
-          <div className="row section_4___row text-center">
-            <div className="card col-lg-4">
-              <div className="card-head"></div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole
-                </p>
-                <img src="" alt="" />
-                <h2 className="card-profile-name">SARA MORDOC</h2>
-                <h2 className="card-profile-job">CEO at Compaxit</h2>
-              </div>
-            </div>
-            <div className="card col-lg-4">
-              <div className="card-head"></div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole
-                </p>
-                <img src="" alt="" />
-                <h2 className="card-profile-name">MARIA MORIO</h2>
-                <h2 className="card-profile-job">CEO at Compaxit</h2>
-              </div>
-            </div>
-            <div className="btn_card col-lg-4">
-              <h2>WHAT THEY SAY</h2>
-              <p className="card-text">
-                Our object in the construction of the state is the greatest
-                happiness of the whole, and not that of any one class.
-              </p>
-              <a href="/" className="section_3___service_btn">
-                <div className="box">
-                  <FiPlus />
+                {/* <div className="section_4___background"></div> */}
+                <div className='row section_4___row text-center'>
+                    <div className="card col-4 col">
+                        <div className="card-head">
+                            <img src={service_quote} alt="" />
+                        </div>
+                        <div className="card-body">
+                            <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                            <img src={service_profile_1} alt="" />
+                            <h2 className='card-profile-name'>SARA MORDOC</h2>
+                            <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                        </div>
+                    </div>
+                    <div className="card col-4 col">
+                        <div className="card-head">
+                            <img src={service_quote} alt="" />
+                        </div>
+                        <div className="card-body">
+                            <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                            <img src={service_profile_2} alt="" />
+                            <h2 className='card-profile-name'>MARIA MORIO</h2>
+                            <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                        </div>
+                    </div>
+                    <div className='btn_card col-lg-4'>
+                        <h2>WHAT THEY SAY</h2>
+                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                        <a href="/" className='section_3___service_btn'>
+                            <div className="box">
+                                <FiPlus />
+                            </div>
+                            <span>
+                                View More Services
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <span>View More Services</span>
-              </a>
             </div>
-          </div>
-        </div>
         <div className="section_5 blogread_related-space">
           <h1 className="text-center">RELATED POSTS</h1>
           <div className="underline mt-4">
