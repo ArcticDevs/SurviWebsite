@@ -4,7 +4,7 @@ import "../styles/Blog.css";
 import { BsCalendarPlus, BsClockHistory } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import SubscribeNewsFooter from "../Components/SubscribeNewsFooter";
+import SubscribeNewsFooter from "../components/SubscribeNewsFooter";
 
 const BlogRead = () => {
   const navigate = useNavigate();

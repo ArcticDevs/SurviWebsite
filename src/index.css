@@ -145,41 +145,6 @@ nav {
   stroke-width: 20px;
 }
 
-/* home Page */
-.section_1 {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.section_1___box {
-  position: absolute;
-  line-height: 1;
-  padding: 40px;
-  width: 40%;
-  border: 15px solid white;
-  color: white;
-
-  top: 100px;
-  left: calc(30px + 4vw);
-}
-
-.section_1 img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.section_1___box h1 {
-  font-size: 48px;
-  font-weight: 600;
-}
-.section_1___box h6 {
-  font-size: 17px;
-  font-weight: 400;
-}
-
 @media only screen and (min-width: 1200px) {
   .nav_cont {
     width: 80% !important;

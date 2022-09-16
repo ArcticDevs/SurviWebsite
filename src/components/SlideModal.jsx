@@ -1,30 +1,40 @@
-import React from 'react'
+import { useState } from 'react'
+import Modal from 'react-bootstrap/Modal';
+import Carousel from 'react-bootstrap/Carousel';
 
-const SlideModal = () => {
+const SlideModal = ({ imageList }) => {
+
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
     return (
-        <div>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
+        <Modal>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=First slide&bg=373940"
+                        alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        alt="Second slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+            </Carousel>
+        </Modal>
     )
 }
 

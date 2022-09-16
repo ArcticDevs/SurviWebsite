@@ -1,9 +1,10 @@
 // import { lazy, Suspense } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import Navbar from './Components/Navbar';
-import Blog from './Pages/Blog.jsx'
-import Home from './Pages/Home';
-import BlogRead from './Pages/BlogRead.jsx'
+import Navbar from './components/Navbar';
+import Blog from './pages/Blog.jsx'
+import Home from './pages/Home';
+import BlogRead from './pages/BlogRead.jsx'
+import Footer from './components/Footer.jsx'
 // const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path="/post/:title" element={<BlogRead />} />
         </Routes>
       {/* </Suspense> */}
+      <Footer />
     </div>
   )
 }

@@ -5,9 +5,9 @@
         rgba(255, 255, 255, 0.295)
       )
       repeat scroll 0px 0px / auto padding-box border-box,
-    url("../Assets/down_back.svg") no-repeat scroll 100% 100% / 500px
+    url("../assets/down_back.svg") no-repeat scroll 100% 100% / 500px
       padding-box border-box,
-    white url("../Assets/up_back.svg") no-repeat scroll 10% 0% / 500px
+    white url("../assets/up_back.svg") no-repeat scroll 10% 0% / 500px
       padding-box border-box;
   padding: 100px 20px;
   max-width: 100%;
@@ -68,7 +68,7 @@
   margin-inline-end: 10px;
   text-align: center;
   width: 350px;
-  background: #fff url("../Assets/email.jpg") no-repeat scroll 0% 40% / 60px
+  background: #fff url("../assets/email.jpg") no-repeat scroll 0% 40% / 60px
     padding-box border-box;
   border: 1px solid var(--hover-color);
   border-radius: 6px;
@@ -230,7 +230,7 @@
   .SNF_input {
     width: 100%;
     margin: -50px auto auto auto;
-    background: #fff url("../Assets/email.jpg") no-repeat scroll -10px 40% / 60px
+    background: #fff url("../assets/email.jpg") no-repeat scroll -10px 40% / 60px
     padding-box border-box;
   }
 
