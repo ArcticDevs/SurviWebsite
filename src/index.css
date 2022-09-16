@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --hover-color: #1080FF;
+  /* --hover-color: #1080FF; */
+  --hover-color: #F1AB0A;
 }
 
 * {
@@ -71,8 +72,7 @@ nav {
   position: absolute;
   top: -3px;
   width: 7px;
-  background: rgb(0, 136, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: var(--hover-color) none repeat scroll 0% 0% / auto padding-box border-box;
   border-radius: 100px;
 }
 
@@ -82,8 +82,7 @@ nav {
   right: 0px;
   top: -3px;
   width: 7px;
-  background: rgb(0, 136, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: var(--hover-color) none repeat scroll 0% 0% / auto padding-box border-box;
   border-radius: 100px;
 }
 
@@ -101,7 +100,7 @@ nav {
   padding: 12px 25px !important;
   font-size: 12px !important;
   letter-spacing: 1px;
-  background-color: #3f74ff !important;
+  background-color: var(--hover-color) !important;
   color: white !important;
 }
 

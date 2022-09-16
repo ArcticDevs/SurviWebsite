@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeImage from '../assets/home.jpg';
+import HomeImage from '../assets/home.png';
 import WorkImage_1 from '../assets/work_1.jpg';
 import WorkImage_2 from '../assets/work_2.jpg';
 import WorkImage_3 from '../assets/work_3.jpg';
@@ -18,7 +18,7 @@ const Home = () => {
                 <div className='section_1___box'>
                     <h1>WE TAKE YOUR DREAM HOME AND MAKE IT REAL</h1>
                     <h6 className='my-3'>Your stunning website is just a few clicks away. It's easy and free</h6>
-                    <button type='button' className='btn bg-white text-primary rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button>
+                    <button type='button' className='btn bg-white text-warning rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button>
                 </div>
                 <img src={HomeImage} alt="home_image" />
             </div>
