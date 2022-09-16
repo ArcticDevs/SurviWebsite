@@ -1,8 +1,8 @@
 // import { lazy, Suspense } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import Navbar from './components/Navbar';
-import Blog from './pages/Blog.jsx'
-import Home from './pages/Home';
+import Navbar from './Components/Navbar';
+import Blog from './Pages/Blog.jsx'
+import Home from './Pages/Home';
 // const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
