@@ -91,6 +91,11 @@ nav {
 .navbar-brand {
   padding-left: 20px !important;
 }
+.navbar-brand img {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
 .navbar-toggler:hover,
 .navbar-toggler:focus {
   border: none !important;

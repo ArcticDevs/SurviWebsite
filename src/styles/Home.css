@@ -22,7 +22,7 @@
 }
 
 .parallax {
-    background-image: url("../assets/home.png");
+    background-image: url("../assets/home/home.png");
     height: 100%;
     background-attachment: fixed;
     background-position: 80%;
@@ -221,6 +221,16 @@
     align-items: center;
     justify-content: center;
     text-decoration: none !important;
+}
+
+.section_3 .card-title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.section_3 .card-text {
+    font-size: 15px !important;
+    font-weight: 500 !important;
 }
 
 .section_3___service_btn .box {

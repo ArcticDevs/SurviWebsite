@@ -7,7 +7,7 @@ const App = () => {
     const navigate = useNavigate()
   return (
     <>
-      <div className="container-fluid px-4 mt-5">
+      <div className="container-fluid px-4">
         <div className="row">
           <div className="blog_container1 mb-5">
             <div className="blog_container pt-5">

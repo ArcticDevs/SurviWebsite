@@ -1,32 +1,32 @@
 import { useState } from 'react';
 import Footer from '../components/Footer';
-import WorkImage_1 from '../assets/work_1.jpg';
-import WorkImage_2 from '../assets/work_2.jpg';
-import WorkImage_3 from '../assets/work_3.jpg';
+import WorkImage_1 from '../assets/home/work_1.jpg';
+import WorkImage_2 from '../assets/home/work_2.jpg';
+import WorkImage_3 from '../assets/home/work_3.jpg';
 import "../styles/Home.css"
 import { FiPlus } from 'react-icons/fi';
-import Image_1 from '../assets/image_1.png'
-import Image_2 from '../assets/image_2.png'
-import Image_3 from '../assets/image_3.png'
-import Image_4 from '../assets/image_4.png'
-import Image_5 from '../assets/image_5.png'
-import service_1 from '../assets/service_1.png'
-import service_2 from '../assets/service_2.png'
-import service_3 from '../assets/service_3.png'
-import service_video from '../assets/service_video.jpg'
+import Image_1 from '../assets/home/image_1.png'
+import Image_2 from '../assets/home/image_2.png'
+import Image_3 from '../assets/home/image_3.png'
+import Image_4 from '../assets/home/image_4.png'
+import Image_5 from '../assets/home/image_5.png'
+import service_1 from '../assets/home/service_1.png'
+import service_2 from '../assets/home/service_2.png'
+import service_3 from '../assets/home/service_3.png'
+import service_video from '../assets/home/service_video.jpg'
 import service_profile_1 from '../assets/service_profile_1.jpg'
 import service_profile_2 from '../assets/service_profile_2.jpg'
 import service_quote from '../assets/service_quote.png'
 import { GrFacebookOption, GrTwitter, GrGooglePlus, GrInstagram, GrPlayFill } from 'react-icons/gr'
 import { BsBehance } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'
-import project_1 from '../assets/project_1.jpg'
-import project_2 from '../assets/project_2.jpg'
-import project_3 from '../assets/project_3.jpg'
-import project_4 from '../assets/project_4.jpeg'
-import project_5 from '../assets/project_5.jpg'
-import project_6 from '../assets/project_6.jpeg'
-import project_icon from '../assets/project_hover.png'
+import project_1 from '../assets/home/project_1.jpg'
+import project_2 from '../assets/home/project_2.jpg'
+import project_3 from '../assets/home/project_3.jpg'
+import project_4 from '../assets/home/project_4.jpeg'
+import project_5 from '../assets/home/project_5.jpg'
+import project_6 from '../assets/home/project_6.jpeg'
+import project_icon from '../assets/home/project_hover.png'
 import SlideModal from '../components/SlideModal';
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
                     <div className='section_1___box'>
                         <h1>WE TAKE YOUR DREAM HOME AND MAKE IT REAL</h1>
                         <h6 className='my-3'>Your stunning website is just a few clicks away. It's easy and free</h6>
-                        <button type='button' className='btn bg-white text-warning rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button>
+                        {/* <button type='button' className='btn bg-white text-warning rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button> */}
                     </div>
                     <div className='parallax'></div>
                     {/* <img src={HomeImage} alt="home_image" /> */}

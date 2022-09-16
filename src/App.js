@@ -13,11 +13,11 @@ const App = () => {
     <div className='app'>
       <Navbar />
       {/* <Suspense> */}
-        <Routes location={location} key={location.pathname}>
-          <Route exact path='/' element={<Home />} />
-          <Route exact path="/blog" element={<Blog/>} />
-          <Route exact path="/post/:title" element={<BlogRead />} />
-        </Routes>
+      <Routes location={location} key={location.pathname}>
+        <Route path='/' element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/post/:title" element={<BlogRead />} />
+      </Routes>
       {/* </Suspense> */}
       {/* <Footer /> */}
     </div>
