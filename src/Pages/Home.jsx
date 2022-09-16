@@ -197,51 +197,47 @@ const Home = () => {
                         <div className="underline-leftcircle"></div>
                         <div className="underline-rightcircle"></div>
                     </div>
-                    <div className="image_grid">
-                        <div className='row'>
-                            <div className='project' onClick={() => handleProjectClick([project_1, project_2, project_3])}>
-                                <img className='project-image' src={project_1} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                    <div className='row'>
+                        <div className='project' onClick={() => handleProjectClick([project_1, project_2, project_3])}>
+                            <img className='project-image' src={project_1} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
-                            <div className='project' onClick={() => handleProjectClick([project_2, project_3, project_4])}>
-                                <img className='project-image' src={project_2} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                        </div>
+                        <div className='project' onClick={() => handleProjectClick([project_2, project_3, project_4])}>
+                            <img className='project-image' src={project_2} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
-                            <div className='project' onClick={() => handleProjectClick([project_3, project_4, project_5])}>
-                                <img className='project-image' src={project_3} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                        </div>
+                        <div className='project' onClick={() => handleProjectClick([project_3, project_4, project_5])}>
+                            <img className='project-image' src={project_3} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
-                            {/* </div>
-                    <div className='row'> */}
-                            <div className='project' onClick={() => handleProjectClick([project_4, project_5, project_6])}>
-                                <img className='project-image' src={project_4} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                        </div>
+                        <div className='project' onClick={() => handleProjectClick([project_4, project_5, project_6])}>
+                            <img className='project-image' src={project_4} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
-                            <div className='project' onClick={() => handleProjectClick([project_5, project_6, project_1])}>
-                                <img className='project-image' src={project_5} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                        </div>
+                        <div className='project' onClick={() => handleProjectClick([project_5, project_6, project_1])}>
+                            <img className='project-image' src={project_5} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
-                            <div className='project' onClick={() => handleProjectClick([project_6, project_1, project_2])}>
-                                <img className='project-image' src={project_6} alt="" />
-                                <div className='project-hover'>
-                                    <img src={project_icon} alt="" />
-                                    <span className='ms-3'>Quick View</span>
-                                </div>
+                        </div>
+                        <div className='project' onClick={() => handleProjectClick([project_6, project_1, project_2])}>
+                            <img className='project-image' src={project_6} alt="" />
+                            <div className='project-hover'>
+                                <img src={project_icon} alt="" />
+                                <span className='ms-3'>Quick View</span>
                             </div>
                         </div>
                     </div>
