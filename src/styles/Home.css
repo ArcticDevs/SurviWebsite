@@ -623,6 +623,12 @@
     .section_4___row .card:nth-child(2) {
         margin-top: 100px !important;
     }
+    .section_4___row .btn_card {
+        margin: 50px 0 100px !important;
+        display: block !important;
+        position: relative !important;
+        width: 100%;
+    }
     .subscribe-form {
         flex-direction: column;
         width: 100%;
