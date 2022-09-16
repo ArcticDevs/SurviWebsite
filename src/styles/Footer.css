@@ -48,4 +48,8 @@
     .footer_left___grid p {
         width: 100% !important;
     }
+
+    .footer_right {
+        width: 100%;
+    }
 }
