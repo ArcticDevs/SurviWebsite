@@ -1,8 +1,8 @@
 import React from 'react';
-import HomeImage from '../assets/home.png';
-import WorkImage_1 from '../assets/work_1.jpg';
-import WorkImage_2 from '../assets/work_2.jpg';
-import WorkImage_3 from '../assets/work_3.jpg';
+import HomeImage from '../Assets/home.png';
+import WorkImage_1 from '../Assets/work_1.jpg';
+import WorkImage_2 from '../Assets/work_2.jpg';
+import WorkImage_3 from '../Assets/work_3.jpg';
 import "../styles/Home.css"
 import { FiPlus } from 'react-icons/fi';
 import Image_1 from '../assets/image_1.png'
