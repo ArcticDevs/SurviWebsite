@@ -23,9 +23,9 @@ import { FiMail } from 'react-icons/fi'
 import project_1 from '../assets/home/project_1.jpg'
 import project_2 from '../assets/home/project_2.jpg'
 import project_3 from '../assets/home/project_3.jpg'
-import project_4 from '../assets/home/project_4.jpeg'
+import project_4 from '../assets/home/project_4.jpg'
 import project_5 from '../assets/home/project_5.jpg'
-import project_6 from '../assets/home/project_6.jpeg'
+import project_6 from '../assets/home/project_6.jpg'
 import project_icon from '../assets/home/project_hover.png'
 import SlideModal from '../components/SlideModal';
 
