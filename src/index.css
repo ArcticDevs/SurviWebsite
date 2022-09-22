@@ -34,6 +34,14 @@
   background-color: #9a9a9a;
 }
 
+body,html {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   margin-top: 60px;
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import WorkImage_1 from '../assets/home/work_1.jpg';
-import WorkImage_2 from '../assets/home/work_2.jpg';
+// import WorkImage_2 from '../assets/home/work_2.jpg';
 import WorkImage_3 from '../assets/home/work_3.jpg';
 import "../styles/Home.css"
 import { FiPlus } from 'react-icons/fi';
@@ -29,18 +29,55 @@ import project_6 from '../assets/home/project_6.jpg'
 import project_icon from '../assets/home/project_hover.png'
 import SlideModal from '../components/SlideModal';
 
+const projectData = [
+    {
+        carouselImage: [project_1, project_2, project_3],
+        image: project_1,
+        title: "Project 1",
+    },
+    {
+        carouselImage: [project_2, project_3, project_4],
+        image: project_2,
+        title: "Project 2",
+    },
+    {
+        carouselImage: [project_3, project_4, project_5],
+        image: project_3,
+        title: "Project 3",
+    },
+    {
+        carouselImage: [project_4, project_5, project_6],
+        image: project_4,
+        title: "Project 4",
+    },
+    {
+        carouselImage: [project_5, project_6, project_1],
+        image: project_5,
+        title: "Project 5",
+    },
+    {
+        carouselImage: [project_6, project_1, project_2],
+        image: project_6,
+        title: "Project 6",
+    },
+]
+
 const Home = () => {
 
     const [projectImageList, setProjectImageList] = useState([]);
+    const [projectTitle, setProjectTitle] = useState("");
 
     const [showModal, setShowModal] = useState(false);
 
-    const handleProjectClick = (data) => {
+    const handleProjectClick = (data,title) => {
         setProjectImageList(data);
+        setProjectTitle(title)
         setShowModal(true);
     }
 
     const handleModalClose = () => {
+        setProjectImageList([])
+        setProjectTitle("")
         setShowModal(false)
     }
 
@@ -57,15 +94,15 @@ const Home = () => {
                     {/* <img src={HomeImage} alt="home_image" /> */}
                 </div>
                 <div className="section_2">
-                    <h1 className='text-center'>Our Services</h1>
+                    <h1 className='text-center section_head'>Our Services</h1>
                     <div className="underline mt-4">
                         <div className="underline-middleline"></div>
                         <div className="underline-leftcircle"></div>
                         <div className="underline-rightcircle"></div>
                     </div>
                     <div className='container gap-3 text-center section_2___grid'>
-                        <div className="card border-0">
-                            <img src={service_1} className="card-img-top" alt="..." />
+                        <div className="card border-0 hover-card">
+                            <img src={service_1} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Renovation</h5>
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
@@ -78,24 +115,24 @@ const Home = () => {
                                 <GrPlayFill className='video-btn-icon' />
                             </a>
                         </div>
-                        <div className="card border-0">
-                            <img src={service_2} className="card-img-top" alt="..." />
+                        <div className="card border-0 hover-card">
+                            <img src={service_2} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Renovation</h5>
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
-                        <div className="card border-0">
-                            <img src={service_3} className="card-img-top" alt="..." />
+                        <div className="card border-0 hover-card">
+                            <img src={service_3} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Renovation</h5>
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
-                        <div className="card border-0">
-                            <img src={service_1} className="card-img-top" alt="..." />
+                        <div className="card border-0 hover-card">
+                            <img src={service_1} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Renovation</h5>
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
@@ -105,37 +142,29 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="section_3">
-                    <h1 className='text-center'>What We Offer</h1>
+                    <div className="background_parallax"></div>
+                    <h1 className='text-center section_head'>What We Offer</h1>
                     <div className="underline mt-4">
                         <div className="underline-middleline"></div>
                         <div className="underline-leftcircle"></div>
                         <div className="underline-rightcircle"></div>
                     </div>
                     <div className='container section_3___grid'>
-                        <div className='row'>
-                            <div className="card rounded-0 col-lg-4">
+                        <div className='row d-flex gap-4 justify-content-center'>
+                            <div className="card rounded-0 col-lg">
                                 <img src={WorkImage_1} className="card-img-top rounded-0 w-100" alt="Work_Image" />
                                 <div className="card-body-cont">
                                     <div className="card-body hover-card">
-                                        <h5 className="card-title">Renovation</h5>
+                                        <h5 className="card-title">Survi Pristine</h5>
                                         <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="card rounded-0 col-lg-4">
-                                <img src={WorkImage_2} className="card-img-top" alt="Work_Image" />
-                                <div className="card-body-cont">
-                                    <div className="card-body hover-card">
-                                        <h5 className="card-title">Renovation</h5>
-                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card rounded-0 col-lg-4">
+                            <div className="card rounded-0 col-lg">
                                 <img src={WorkImage_3} className="card-img-top" alt="Work_Image" />
                                 <div className="card-body-cont">
                                     <div className="card-body hover-card">
-                                        <h5 className="card-title">Renovation</h5>
+                                        <h5 className="card-title">Survi Prive</h5>
                                         <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                                     </div>
                                 </div>
@@ -151,10 +180,10 @@ const Home = () => {
                         </span>
                     </a>
                 </div>
+
                 <div className="section_4">
-                    {/* <div className="section_4___background"></div> */}
                     <div className='row section_4___row text-center'>
-                        <div className="card col-4 col">
+                        <div className="card col-4 col hover-card">
                             <div className="card-head">
                                 <img src={service_quote} alt="" />
                             </div>
@@ -165,7 +194,7 @@ const Home = () => {
                                 <h2 className='card-profile-job'>CEO at Compaxit</h2>
                             </div>
                         </div>
-                        <div className="card col-4 col">
+                        <div className="card col-4 col hover-card">
                             <div className="card-head">
                                 <img src={service_quote} alt="" />
                             </div>
@@ -191,55 +220,23 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="section_5">
-                    <h1 className='text-center'>Our Projects</h1>
+                    <h1 className='text-center section_head'>How we stand apart</h1>
                     <div className="underline mt-4">
                         <div className="underline-middleline"></div>
                         <div className="underline-leftcircle"></div>
                         <div className="underline-rightcircle"></div>
                     </div>
-                    <div className='row'>
-                        <div className='project' onClick={() => handleProjectClick([project_1, project_2, project_3])}>
-                            <img className='project-image' src={project_1} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
+                    <div className='row d-flex justify-content-center'>
+                        {projectData.map((val, index) =>
+                            <div className='project' key={index} onClick={() => handleProjectClick(val.carouselImage,val.title)}>
+                                <img className='project-image' src={val.image} alt="" />
+                                <h2 className='project-name-hover'>{val.title}</h2>
+                                <div className='project-hover'>
+                                    <img src={project_icon} alt="" />
+                                    <span className='ms-3'>Quick View</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className='project' onClick={() => handleProjectClick([project_2, project_3, project_4])}>
-                            <img className='project-image' src={project_2} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
-                            </div>
-                        </div>
-                        <div className='project' onClick={() => handleProjectClick([project_3, project_4, project_5])}>
-                            <img className='project-image' src={project_3} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
-                            </div>
-                        </div>
-                        <div className='project' onClick={() => handleProjectClick([project_4, project_5, project_6])}>
-                            <img className='project-image' src={project_4} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
-                            </div>
-                        </div>
-                        <div className='project' onClick={() => handleProjectClick([project_5, project_6, project_1])}>
-                            <img className='project-image' src={project_5} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
-                            </div>
-                        </div>
-                        <div className='project' onClick={() => handleProjectClick([project_6, project_1, project_2])}>
-                            <img className='project-image' src={project_6} alt="" />
-                            <div className='project-hover'>
-                                <img src={project_icon} alt="" />
-                                <span className='ms-3'>Quick View</span>
-                            </div>
-                        </div>
+                        )}
                     </div>
                 </div>
                 <div className="section_6">
@@ -268,7 +265,7 @@ const Home = () => {
                             <span className="input-group-text">
                                 <FiMail />
                             </span>
-                            <input type="email" className="form-control subscribe_input" placeholder="Enter your Email" />
+                            <input type="email" className="form-control subscribe_input shadow-none" placeholder="Enter your Email" />
                         </div>
                         <button className="blog_input-btn ms-md-3">Get Started</button>{" "}
                     </div>
@@ -291,8 +288,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <SlideModal imageList={projectImageList} show={showModal} close={handleModalClose} />
-            <Footer />
+            <SlideModal imageList={projectImageList} projectTitle={projectTitle} show={showModal} close={handleModalClose} />
+            {/* <Footer /> */}
         </>
     )
 }

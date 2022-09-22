@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/nav_logo.png'
 import symbol from '../assets/logo.png'
 import useBreakpoints from '../customHooks/useBreakpoints'
+import { motion } from "framer-motion";
+
+const slashMotion = {
+    rest: { opacity: 1, x: 0, ease: "easeOut", duration: 0.2, type: "tween" },
+    hover: {
+        opacity: [0, 1],
+        x: [-80, 0],
+        transition: {
+            duration: 0.4,
+            type: "tween",
+            ease: "easeIn"
+        }
+    }
+};
 
 const Navbar = () => {
 
@@ -12,9 +26,11 @@ const Navbar = () => {
         <header>
             <nav className="navbar fixed-top navbar-expand-xl">
                 <div className="container-fluid mx-auto nav_cont">
-                    <Link className="navbar-brand d-flex align-items-center" to="/">
-                        <img src={symbol} alt="" />
-                        <img src={logo} alt="" />
+                    <Link to="/">
+                        <motion.div className="navbar-brand d-flex gap-1 align-items-center" initial="rest" whileHover="hover" animate="rest">
+                            <img src={symbol} alt="" />
+                            <motion.img src={logo} alt="" variants={slashMotion} />
+                        </motion.div>
                     </Link>
                     <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -47,11 +63,11 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/">Contact</Link>
                             </li>
-                            {!isXl &&
+                            {/* {!isXl &&
                                 <li className="ms-5">
                                     <button className='btn rounded-0 nav_btn'>Hire us Now</button>
                                 </li>
-                            }
+                            } */}
                         </ul>
                     </div>
                 </div>

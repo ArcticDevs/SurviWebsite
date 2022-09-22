@@ -1,50 +1,82 @@
-import React, { useState, useEffect } from "react";
-import SubscribeNewsFooter from "../components/SubscribeNewsFooter";
 import "../styles/Blog.css";
-import {useNavigate} from 'react-router-dom';
+import AnimatedHeader from "../components/AnimatedHeader";
+
+import blog_1 from "../assets/Blog/blog_1.jpg"
+import blog_2 from "../assets/Blog/blog_2.jpg"
+import blog_3 from "../assets/Blog/blog_3.jpg"
+import blog_4 from "../assets/Blog/blog_4.jpg"
+import blog_5 from "../assets/Blog/blog_5.jpg"
+
+import { Link } from "react-router-dom";
+
+const blogsData = [
+	{
+		id: 1,
+		title: "Survi Pristine",
+		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		image: blog_1,
+		postImages: [blog_1, blog_2, blog_3],
+	},
+	{
+		id: 2,
+		title: "Survi Pristine",
+		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		image: blog_2,
+		postImages: [blog_2, blog_3, blog_4],
+	},
+	{
+		id: 3,
+		title: "Survi Pristine",
+		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		image: blog_3,
+		postImages: [blog_3, blog_4, blog_5],
+	},
+	{
+		id: 4,
+		title: "Survi Pristine",
+		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		image: blog_4,
+		postImages: [blog_4, blog_5, blog_1],
+	},
+	{
+		id: 5,
+		title: "Survi Pristine",
+		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		image: blog_5,
+		postImages: [blog_5, blog_1, blog_2],
+	},
+]
 
 const App = () => {
-    const navigate = useNavigate()
-  return (
-    <>
-      <div className="container-fluid px-4">
-        <div className="row">
-          <div className="blog_container1 mb-5">
-            <div className="blog_container pt-5">
-              <div className="blog_content">
-                <h1 className="blog_text pt-5">blog</h1>
-                <div className="blog_underline mt-4">
-                  <div className="blog_underline-middleline"></div>
-                  <div className="blog_underline-leftcircle"></div>
-                  <div className="blog_underline-rightcircle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="blog_container2 mt-5 pb-5">
-            {[...Array(5)].map((elementInArray, index) => (
-              <div key={index} className="blog_card col-xl-9 col-lg-10 col-md-12 col-sm-10 col-12">
-                <img
-                  className="blog_card-image"
-                  loading="lazy"
-                  src="https://assets.website-files.com/5e2c8d5486f41720cf19080f/5e2ced778c2b17fbb9bf5c8c_photo-1506862047911-9815cdcb77c2-(1).jpg"
-                  alt="card"
-                  onClick={() => navigate('/post/the-history-of-web-design')}
-                />
-                <h1 className="blog_card-title">The History Of Mason</h1>
-                <p className="blog_card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole, and not that of any one class.
-                </p>
-                <span className="blog_card-readmore" onClick={() => navigate('/post/the-history-of-web-design')}>Read more</span>
-              </div>
-            ))}
-          </div>
-          <SubscribeNewsFooter />
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className="container-fluid">
+				<div className="blog_section_1">
+					<AnimatedHeader />
+					<h1 className='text-center section_head'>Blog</h1>
+					<div className="underline mt-4">
+						<div className="underline-middleline"></div>
+						<div className="underline-leftcircle"></div>
+						<div className="underline-rightcircle"></div>
+					</div>
+				</div>
+				<div className="blog_section_2">
+					<div className="blog-grid">
+						{blogsData.map((val, index) => (
+							<Link to={`/post/${val.id}`} state={{ post: val, id: val.id }} className="card blog-card hover-card" key={index}>
+								<img src={val.image} className="card-img-top " alt="Work_Image" />
+								<div className="card-body">
+									<h3 className="card-title">{val.title}</h3>
+									<p className="card-text">{val.body}</p>
+									<h6>Read More</h6>
+								</div>
+							</Link>
+						))}
+					</div>
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default App;

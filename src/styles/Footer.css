@@ -3,8 +3,12 @@
     display: flex;
     justify-content: center;
     background-color: var(--hover-color);
-    padding: 70px 10vw;
+    padding: 70px 45px !important;
+    width: 70% !important;
+    font-size: 14px;
+    margin: auto;
     color: white;
+    gap: 30px;
 }
 
 .footer h1 {
@@ -22,22 +26,38 @@
 
 .footer_left {
     position: relative;
-    flex: 80%;
+    flex: 1;
+    /* flex: 60%; */
 }
 
-.footer_left___grid {
-    width: 70%;
+.footer_mid {
+    flex: 1;
+    /* flex: 30%; */
 }
+/* 
+.footer_left___grid {
+    width: 100%;
+} */
 
 .footer_right {
     position: relative;
-    width: 50%;
-    flex: 30%;
+    /* width: 100%; */
+    flex: 1;
+    /* flex: 30%; */
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer {
+        width: 90% !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
+        width: 100% !important;
+        /* margin: 0 20px !important; */
+        /* max-width: unset !important; */
         gap: 30px;
     }
     .footer_left___grid {
