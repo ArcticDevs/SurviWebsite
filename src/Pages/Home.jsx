@@ -1,6 +1,7 @@
 import { useState } from 'react';
 // import Footer from '../components/Footer';
 import WorkImage_1 from '../assets/home/work_1.jpg';
+import AnimatedSubscribe from '../components/AnimatedSubscribe';
 // import WorkImage_2 from '../assets/home/work_2.jpg';
 import WorkImage_3 from '../assets/home/work_3.jpg';
 import "../styles/Home.css"
@@ -247,6 +248,7 @@ const Home = () => {
                     <img src={Image_5} alt="" />
                 </div>
                 <div className="section_7">
+                    <AnimatedSubscribe />
                     <h2 className="text-center mt-5">
                         Subscribe to Newsletter
                     </h2>

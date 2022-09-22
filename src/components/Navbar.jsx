@@ -6,7 +6,7 @@ import useBreakpoints from '../customHooks/useBreakpoints'
 import { motion } from "framer-motion";
 
 const slashMotion = {
-    rest: { opacity: 1, x: 0, ease: "easeOut", duration: 0.2, type: "tween" },
+    rest: { opacity: 0, x: 0, ease: "easeIn", duration: 0.4, type: "tween" },
     hover: {
         opacity: [0, 1],
         x: [-80, 0],

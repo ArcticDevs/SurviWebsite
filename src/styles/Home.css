@@ -601,11 +601,12 @@
 }
 
 .section_7 {
+    position: relative;
     min-height: 80vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.13),
+    /* background: linear-gradient(rgba(255, 255, 255, 0.13),
             rgba(255, 255, 255, 0.295)) repeat scroll 0px 0px / auto padding-box border-box,
         url("../assets/down_back.svg") no-repeat scroll 100% 100% / 500px padding-box border-box,
-        white url("../assets/up_back.svg") no-repeat scroll 10% 0% / 500px padding-box border-box;
+        white url("../assets/up_back.svg") no-repeat scroll 10% 0% / 500px padding-box border-box; */
     padding: 100px 20px;
 }
 
