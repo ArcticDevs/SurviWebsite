@@ -379,7 +379,7 @@
     left: -15%;
     top: -80px;
     bottom: 0;
-    box-shadow: 0 0 0 50px inset var(--hover-color);
+    box-shadow: 0 0 0 40px inset var(--hover-color);
     /* border: 20px solid var(--hover-color); */
     /* background-color: var(--hover-color); */
     border-radius: 0 120px 120px 0;

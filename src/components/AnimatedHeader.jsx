@@ -6,7 +6,7 @@ const AnimatedHeader = () => {
 
     return (
             <ul className='animated-box'>
-                {[...Array(16)].map((val, index) =>
+                {[...Array(12)].map((val, index) =>
                     <li key={index}></li>
                 )}
             </ul>

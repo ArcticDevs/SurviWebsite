@@ -12,17 +12,15 @@
 .u-right {
     position: absolute;
     display: block;
-    width: 400px;
+    width: 350px;
     height: 350px;
     background-color: transparent;
+    border-radius: 100px;
 }
 
 .u-left {
-    border-bottom: 40px solid #f8cb65;
-    border-left: 40px solid #f8cb65;
-    border-right: 40px solid #f8cb65;
+    border: 40px solid #f8cb65;
     left: 5%;
-    border-radius: 0 0 100px 100px;
     top: -90vh;
 }
 
@@ -36,12 +34,9 @@
 }
 
 .u-right {
-    border-top: 40px solid #f8cb65;
-    border-left: 40px solid #f8cb65;
-    border-right: 40px solid #f8cb65;
+    border: 40px solid #f8cb65;
     right: 5%;
     bottom: -90vh;
-    border-radius: 100px 100px 0 0;
 }
 
 .u-right:nth-child(3) {
