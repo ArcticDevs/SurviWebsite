@@ -249,7 +249,7 @@ const Home = () => {
                 </div>
                 <div className="section_7">
                     <AnimatedSubscribe />
-                    <h2 className="text-center mt-5">
+                    <h2 className="text-center">
                         Subscribe to Newsletter
                     </h2>
                     <p className="text-center mt-4">
