@@ -41,7 +41,7 @@
 
 .u-right:nth-child(3) {
     animation: float-right 10s linear infinite;
-    animation-delay: 10s;
+    animation-delay: 0s;
 }
 
 .u-right:nth-child(4) {

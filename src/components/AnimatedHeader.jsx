@@ -5,11 +5,16 @@ import '../styles/AnimatedHeader.css';
 const AnimatedHeader = () => {
 
     return (
-            <ul className='animated-box'>
-                {[...Array(12)].map((val, index) =>
-                    <li key={index}></li>
-                )}
-            </ul>
+            <div className="animated-box">
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+                <div className="blog-box-line"></div>
+            </div>
     )
 }
 
