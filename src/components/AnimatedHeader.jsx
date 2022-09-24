@@ -5,16 +5,16 @@ import '../styles/AnimatedHeader.css';
 const AnimatedHeader = () => {
 
     return (
-            <div className="animated-box">
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-                <div className="blog-box-line"></div>
-            </div>
+        <div className="animated-box">
+            <div className='blog-head-left-1'></div>
+            <div className='blog-head-left-1'></div>
+            <div className='blog-head-left-2'></div>
+            <div className='blog-head-left-2'></div>
+            <div className='blog-head-right-1'></div>
+            <div className='blog-head-right-1'></div>
+            <div className='blog-head-right-2'></div>
+            <div className='blog-head-right-2'></div>
+        </div>
     )
 }
 

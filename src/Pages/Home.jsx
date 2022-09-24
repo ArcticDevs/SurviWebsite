@@ -87,8 +87,8 @@ const Home = () => {
             <div className='container-fluid'>
                 <div className="section_1">
                     <div className='section_1___box'>
-                        <h1>WE TAKE YOUR DREAM HOME AND MAKE IT REAL</h1>
-                        <h6 className='my-3'>Your stunning website is just a few clicks away. It's easy and free</h6>
+                        <h1>MOULDING A STRUCTURE FOR YOUR DREAMS.</h1>
+                        <h6 className='my-3'>As real estate developers, we think that our goal is to build landmarks that alter living and working environments, not merely create spaces.</h6>
                         {/* <button type='button' className='btn bg-white text-warning rounded-0' style={{ padding: '12px 25px', fontSize: '12px' }}>Get a Free Quote</button> */}
                     </div>
                     <div className='parallax'></div>
@@ -105,8 +105,8 @@ const Home = () => {
                         <div className="card border-0 hover-card">
                             <img src={service_1} className="card_img" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Renovation</h5>
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                <h5 className="card-title">Architecture</h5>
+                                <p className="card-text">The skills, knowledge and experience is what we make of this. The craftsmanship given by a professional gives a home its value as well as its character. And we aim at providing these skills to you.</p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
@@ -119,24 +119,24 @@ const Home = () => {
                         <div className="card border-0 hover-card">
                             <img src={service_2} className="card_img" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Renovation</h5>
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                <h5 className="card-title">Vision</h5>
+                                <p className="card-text">The vision of our company is to take the real estate industry in the areas that have never been explored before and change the overall scenario of real estate sector in the emerging areas. The Mission of our company is to help people to create realm of their own for a highly satisfying and successful life. </p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
                         <div className="card border-0 hover-card">
                             <img src={service_3} className="card_img" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Renovation</h5>
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                <h5 className="card-title">Goal</h5>
+                                <p className="card-text">Our goal is to secure a place of prominence in the real estate industry and more importantly, in the hearts of the people.  To achieve benchmark in quality that touches every walk of life and human needs, and to live up to the expectations and discerning commitment of quality and customer satisfaction.</p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
                         <div className="card border-0 hover-card">
                             <img src={service_1} className="card_img" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Renovation</h5>
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                <h5 className="card-title">Aim</h5>
+                                <p className="card-text">Our aim is to provide what you wish for. A mode to achieve and fulfill your dreams. Comfort that holds up no doubt and a beginning  to your dream life.</p>
                                 <a href="/">Read More</a>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ const Home = () => {
                                 <div className="card-body-cont">
                                     <div className="card-body hover-card">
                                         <h5 className="card-title">Survi Pristine</h5>
-                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                        <p className="card-text">With Pioneering innovation in gated communities, we at SURVI Group have been holding an unwavering vision to offer a sustainable balance between affordability and luxury.</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,11 @@ const Home = () => {
                                 <div className="card-body-cont">
                                     <div className="card-body hover-card">
                                         <h5 className="card-title">Survi Prive</h5>
-                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                        <p className="card-text">
+                                            Survi Prive is here to dazzle the commercial city with its high-end architecture and a prime location.
+                                            {/* <br /><br /> */}{" "}
+                                            It’s not just another commercial building but a whole eco-system that glitters of sophistication and grandeur.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

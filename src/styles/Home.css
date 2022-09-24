@@ -254,9 +254,10 @@
     padding: 30px 6vw;
 }
 
-.card-img-top {
+.section_3___grid .card-img-top {
     width: 100% !important;
     height: 100% !important;
+    /* height: 400px !important; */
     display: block !important;
     border-radius: 0 !important;
 }
@@ -339,6 +340,12 @@
     font-size: 22px !important;
     color: var(--hover-color) !important;
     border: 2px solid var(--hover-color);
+    transition: all 0.5s ease;
+}
+
+.section_3___service_btn:hover .box {
+    background-color: var(--hover-color);
+    color: white !important;
 }
 
 .section_3___service_btn span {
@@ -681,10 +688,16 @@
     border-left: 2px solid var(--hover-color);
     border-top: 2px solid var(--hover-color);
     border-bottom: 2px solid var(--hover-color);
+    transition: all 0.5s ease;
 }
 
 .subscribe_section___social_icons a:last-child {
     border-right: 2px solid var(--hover-color);
+}
+
+.subscribe_section___social_icons a:hover {
+    background-color: var(--hover-color);
+    color: white !important;
 }
 
 .subscribe-form {
