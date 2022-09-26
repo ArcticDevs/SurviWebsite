@@ -14,10 +14,12 @@ import Image_5 from '../assets/home/image_5.png'
 import service_1 from '../assets/home/service_1.png'
 import service_2 from '../assets/home/service_2.png'
 import service_3 from '../assets/home/service_3.png'
+import service_4 from '../assets/home/service_4.png'
 import service_video from '../assets/home/service_video.jpg'
 import service_profile_1 from '../assets/service_profile_1.jpg'
 import service_profile_2 from '../assets/service_profile_2.jpg'
-import service_quote from '../assets/service_quote.png'
+// import service_quote from '../assets/service_quote.png'
+import { MdFormatQuote } from 'react-icons/md'
 import { GrFacebookOption, GrTwitter, GrGooglePlus, GrInstagram, GrPlayFill } from 'react-icons/gr'
 import { BsBehance } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'
@@ -27,7 +29,7 @@ import project_3 from '../assets/home/project_3.jpg'
 import project_4 from '../assets/home/project_4.jpg'
 import project_5 from '../assets/home/project_5.jpg'
 import project_6 from '../assets/home/project_6.jpg'
-import project_icon from '../assets/home/project_hover.png'
+// import project_icon from '../assets/home/project_hover.png'
 import SlideModal from '../components/SlideModal';
 
 const projectData = [
@@ -70,7 +72,7 @@ const Home = () => {
 
     const [showModal, setShowModal] = useState(false);
 
-    const handleProjectClick = (data,title) => {
+    const handleProjectClick = (data, title) => {
         setProjectImageList(data);
         setProjectTitle(title)
         setShowModal(true);
@@ -101,13 +103,13 @@ const Home = () => {
                         <div className="underline-leftcircle"></div>
                         <div className="underline-rightcircle"></div>
                     </div>
-                    <div className='container gap-3 text-center section_2___grid'>
+                    <div className='container text-center section_2___grid'>
                         <div className="card border-0 hover-card">
                             <img src={service_1} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Architecture</h5>
                                 <p className="card-text">The skills, knowledge and experience is what we make of this. The craftsmanship given by a professional gives a home its value as well as its character. And we aim at providing these skills to you.</p>
-                                <a href="/">Read More</a>
+                                {/* <a href="/">Read More</a> */}
                             </div>
                         </div>
                         <div className="card-video border-0">
@@ -121,7 +123,7 @@ const Home = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Vision</h5>
                                 <p className="card-text">The vision of our company is to take the real estate industry in the areas that have never been explored before and change the overall scenario of real estate sector in the emerging areas. The Mission of our company is to help people to create realm of their own for a highly satisfying and successful life. </p>
-                                <a href="/">Read More</a>
+                                {/* <a href="/">Read More</a> */}
                             </div>
                         </div>
                         <div className="card border-0 hover-card">
@@ -129,15 +131,15 @@ const Home = () => {
                             <div className="card-body">
                                 <h5 className="card-title">Goal</h5>
                                 <p className="card-text">Our goal is to secure a place of prominence in the real estate industry and more importantly, in the hearts of the people.  To achieve benchmark in quality that touches every walk of life and human needs, and to live up to the expectations and discerning commitment of quality and customer satisfaction.</p>
-                                <a href="/">Read More</a>
+                                {/* <a href="/">Read More</a> */}
                             </div>
                         </div>
                         <div className="card border-0 hover-card">
-                            <img src={service_1} className="card_img" alt="..." />
+                            <img src={service_4} className="card_img" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Aim</h5>
                                 <p className="card-text">Our aim is to provide what you wish for. A mode to achieve and fulfill your dreams. Comfort that holds up no doubt and a beginning  to your dream life.</p>
-                                <a href="/">Read More</a>
+                                {/* <a href="/">Read More</a> */}
                             </div>
                         </div>
                     </div>
@@ -190,7 +192,8 @@ const Home = () => {
                     <div className='row section_4___row text-center'>
                         <div className="card col-4 col hover-card">
                             <div className="card-head">
-                                <img src={service_quote} alt="" />
+                                <MdFormatQuote />
+                                {/* <img src={service_quote} alt="" /> */}
                             </div>
                             <div className="card-body">
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
@@ -201,7 +204,8 @@ const Home = () => {
                         </div>
                         <div className="card col-4 col hover-card">
                             <div className="card-head">
-                                <img src={service_quote} alt="" />
+                                <MdFormatQuote />
+                                {/* <img src={service_quote} alt="" /> */}
                             </div>
                             <div className="card-body">
                                 <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
@@ -212,6 +216,11 @@ const Home = () => {
                         </div>
                         <div className='btn_card col-lg-4'>
                             <h2>WHAT THEY SAY</h2>
+                            <div className="underline mt-4 mx-0 mb-0">
+                                <div className="underline-middleline"></div>
+                                <div className="underline-leftcircle"></div>
+                                <div className="underline-rightcircle"></div>
+                            </div>
                             <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
                             <a href="/" className='section_3___service_btn'>
                                 <div className="box">
@@ -233,13 +242,13 @@ const Home = () => {
                     </div>
                     <div className='row d-flex justify-content-center'>
                         {projectData.map((val, index) =>
-                            <div className='project' key={index} onClick={() => handleProjectClick(val.carouselImage,val.title)}>
+                            <div className='project' key={index} onClick={() => handleProjectClick(val.carouselImage, val.title)}>
                                 <img className='project-image' src={val.image} alt="" />
                                 <h2 className='project-name-hover'>{val.title}</h2>
-                                <div className='project-hover'>
+                                {/* <div className='project-hover'>
                                     <img src={project_icon} alt="" />
                                     <span className='ms-3'>Quick View</span>
-                                </div>
+                                </div> */}
                             </div>
                         )}
                     </div>
