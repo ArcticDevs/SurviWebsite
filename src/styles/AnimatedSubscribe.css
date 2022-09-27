@@ -16,10 +16,10 @@
     height: 350px;
     background-color: transparent;
     border-radius: 100px;
+    border: 40px solid #f8cb65;
 }
 
 .u-left {
-    border: 40px solid #f8cb65;
     left: 5%;
     top: -90vh;
 }
@@ -34,7 +34,6 @@
 }
 
 .u-right {
-    border: 40px solid #f8cb65;
     right: 5%;
     bottom: -90vh;
 }
@@ -62,6 +61,7 @@
         /* transform: translateY(100%); */
     }
 }
+
 @keyframes float-right {
     0% {
         opacity: 1;
@@ -76,9 +76,12 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .u-left,.u-right {
-        width: 300px;
-        height: 300px;
+@media only screen and (max-width: 768px) {
+    .u-left,
+    .u-right {
+        width: 120px;
+        height: 120px;
+        border-radius: 30px;
+        border: 15px solid #f8cb65;
     }
 }

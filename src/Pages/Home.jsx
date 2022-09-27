@@ -86,7 +86,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='container-fluid'>
+            <div className='container-fluid home-page'>
                 <div className="section_1">
                     <div className='section_1___box'>
                         <h1>MOULDING A STRUCTURE FOR YOUR DREAMS.</h1>
