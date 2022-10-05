@@ -3,6 +3,7 @@ import { useState } from 'react';
 import WorkImage_1 from '../assets/home/work_1.jpg';
 import AnimatedSubscribe from '../components/AnimatedSubscribe';
 // import WorkImage_2 from '../assets/home/work_2.jpg';
+import useBreakpoints from '../customHooks/useBreakpoints';
 import WorkImage_3 from '../assets/home/work_3.jpg';
 import "../styles/Home.css"
 import { FiPlus } from 'react-icons/fi';
@@ -83,6 +84,8 @@ const Home = () => {
         setProjectTitle("")
         setShowModal(false)
     }
+
+    const { isXl } = useBreakpoints()
 
     return (
         <>
@@ -190,47 +193,91 @@ const Home = () => {
 
                 <div className="section_4">
                     <div className='row section_4___row text-center'>
-                        <div className="card col-4 col hover-card">
-                            <div className="card-head">
-                                <MdFormatQuote />
-                                {/* <img src={service_quote} alt="" /> */}
-                            </div>
-                            <div className="card-body">
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
-                                <img src={service_profile_1} alt="" />
-                                <h2 className='card-profile-name'>SARA MORDOC</h2>
-                                <h2 className='card-profile-job'>CEO at Compaxit</h2>
-                            </div>
-                        </div>
-                        <div className="card col-4 col hover-card">
-                            <div className="card-head">
-                                <MdFormatQuote />
-                                {/* <img src={service_quote} alt="" /> */}
-                            </div>
-                            <div className="card-body">
-                                <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
-                                <img src={service_profile_2} alt="" />
-                                <h2 className='card-profile-name'>MARIA MORIO</h2>
-                                <h2 className='card-profile-job'>CEO at Compaxit</h2>
-                            </div>
-                        </div>
-                        <div className='btn_card col-lg-4'>
-                            <h2>WHAT THEY SAY</h2>
-                            <div className="underline mt-4 mx-0 mb-0">
-                                <div className="underline-middleline"></div>
-                                <div className="underline-leftcircle"></div>
-                                <div className="underline-rightcircle"></div>
-                            </div>
-                            <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
-                            <a href="/" className='section_3___service_btn'>
-                                <div className="box">
-                                    <FiPlus />
+                        {isXl ?
+                            <>
+                                <div className='btn_card col-lg-4'>
+                                    <h2>WHAT THEY SAY</h2>
+                                    <div className="underline mt-4 mx-0 mb-0">
+                                        <div className="underline-middleline"></div>
+                                        <div className="underline-leftcircle"></div>
+                                        <div className="underline-rightcircle"></div>
+                                    </div>
+                                    <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                    <a href="/" className='section_3___service_btn'>
+                                        <div className="box">
+                                            <FiPlus />
+                                        </div>
+                                        <span>
+                                            View More Services
+                                        </span>
+                                    </a>
                                 </div>
-                                <span>
-                                    View More Services
-                                </span>
-                            </a>
-                        </div>
+                                <div className="card col-4 col hover-card">
+                                    <div className="card-head">
+                                        <MdFormatQuote />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                                        <img src={service_profile_1} alt="" />
+                                        <h2 className='card-profile-name'>SARA MORDOC</h2>
+                                        <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                                    </div>
+                                </div>
+                                <div className="card col-4 col hover-card">
+                                    <div className="card-head">
+                                        <MdFormatQuote />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                                        <img src={service_profile_2} alt="" />
+                                        <h2 className='card-profile-name'>MARIA MORIO</h2>
+                                        <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                                    </div>
+                                </div>
+                            </>
+                            :
+                            <>
+                                <div className="card col-4 col hover-card">
+                                    <div className="card-head">
+                                        <MdFormatQuote />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                                        <img src={service_profile_1} alt="" />
+                                        <h2 className='card-profile-name'>SARA MORDOC</h2>
+                                        <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                                    </div>
+                                </div>
+                                <div className="card col-4 col hover-card">
+                                    <div className="card-head">
+                                        <MdFormatQuote />
+                                    </div>
+                                    <div className="card-body">
+                                        <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole</p>
+                                        <img src={service_profile_2} alt="" />
+                                        <h2 className='card-profile-name'>MARIA MORIO</h2>
+                                        <h2 className='card-profile-job'>CEO at Compaxit</h2>
+                                    </div>
+                                </div>
+                                <div className='btn_card col-lg-4'>
+                                    <h2>WHAT THEY SAY</h2>
+                                    <div className="underline mt-4 mx-0 mb-0">
+                                        <div className="underline-middleline"></div>
+                                        <div className="underline-leftcircle"></div>
+                                        <div className="underline-rightcircle"></div>
+                                    </div>
+                                    <p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
+                                    <a href="/" className='section_3___service_btn'>
+                                        <div className="box">
+                                            <FiPlus />
+                                        </div>
+                                        <span>
+                                            View More Services
+                                        </span>
+                                    </a>
+                                </div>
+                            </>
+                        }
                     </div>
                 </div>
                 <div className="section_5">
