@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "../styles/BlogRead.css";
-import "../styles/Blog.css";
+import "../styles/pages/BlogRead.css";
+import "../styles/pages/Blog.css";
 import { BsCalendarPlus, BsClockHistory } from "react-icons/bs";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";

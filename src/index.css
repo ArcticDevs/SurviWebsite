@@ -226,6 +226,49 @@ nav {
   stroke-width: 20px;
 }
 
+.box-btn--wrap {
+  margin: 20px 0 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+}
+
+.box-btn--wrap .box-icon {
+  position: relative;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 22px !important;
+  color: var(--hover-color) !important;
+  border: 2px solid var(--hover-color);
+  transition: all 0.5s ease;
+}
+
+.box-btn--wrap span {
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--hover-color);
+  z-index: 1;
+  margin-left: -10px;
+  font-size: 12px !important;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.box-btn--wrap:hover .box-icon {
+  background-color: var(--hover-color);
+  color: white !important;
+}
+
+.box-btn--wrap:hover span {
+  background-color: white;
+  color: black;
+}
+
 @media only screen and (min-width: 1200px) {
   .nav_cont {
     width: 80% !important;

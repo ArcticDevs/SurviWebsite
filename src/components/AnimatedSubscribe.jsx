@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/AnimatedSubscribe.css"
+import "../styles/components/AnimatedSubscribe.css"
 
 const AnimatedSubscribe = () => {
   return (

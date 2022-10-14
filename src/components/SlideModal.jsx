@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
-import '../styles/Modal.css'
+import '../styles/components/Modal.css'
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md'
 
 const SlideModal = ({ imageList, projectTitle, show, close }) => {

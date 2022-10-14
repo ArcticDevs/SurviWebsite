@@ -1,11 +1,8 @@
 import { useState } from 'react';
-// import Footer from '../components/Footer';
 import WorkImage_1 from '../assets/home/work_1.jpg';
-import AnimatedSubscribe from '../components/AnimatedSubscribe';
-// import WorkImage_2 from '../assets/home/work_2.jpg';
 import useBreakpoints from '../customHooks/useBreakpoints';
 import WorkImage_3 from '../assets/home/work_3.jpg';
-import "../styles/Home.css"
+import "../styles/pages/Home.css"
 import { FiPlus } from 'react-icons/fi';
 import Image_1 from '../assets/home/image_1.png'
 import Image_2 from '../assets/home/image_2.png'
@@ -19,19 +16,16 @@ import service_4 from '../assets/home/service_4.png'
 import service_video from '../assets/home/service_video.jpg'
 import service_profile_1 from '../assets/service_profile_1.jpg'
 import service_profile_2 from '../assets/service_profile_2.jpg'
-// import service_quote from '../assets/service_quote.png'
 import { MdFormatQuote } from 'react-icons/md'
-import { GrFacebookOption, GrTwitter, GrGooglePlus, GrInstagram, GrPlayFill } from 'react-icons/gr'
-import { BsBehance } from 'react-icons/bs'
-import { FiMail } from 'react-icons/fi'
+import { GrPlayFill } from 'react-icons/gr'
 import project_1 from '../assets/home/project_1.jpg'
 import project_2 from '../assets/home/project_2.jpg'
 import project_3 from '../assets/home/project_3.jpg'
 import project_4 from '../assets/home/project_4.jpg'
 import project_5 from '../assets/home/project_5.jpg'
 import project_6 from '../assets/home/project_6.jpg'
-// import project_icon from '../assets/home/project_hover.png'
 import SlideModal from '../components/SlideModal';
+import Subscribe from '../components/Subscribe';
 
 const projectData = [
     {
@@ -308,46 +302,7 @@ const Home = () => {
                     <img src={Image_5} alt="" />
                 </div>
                 <div className="section_7">
-                    <AnimatedSubscribe />
-                    <h2 className="text-center">
-                        Subscribe to Newsletter
-                    </h2>
-                    <p className="text-center mt-4">
-                        If you can show people how to build castles, make sure you
-                        <br />
-                        do not neglect building and nurturing your own.
-                    </p>
-                    <div className="underline mt-2 mb-5">
-                        <div className="underline-middleline"></div>
-                        <div className="underline-leftcircle"></div>
-                        <div className="underline-rightcircle"></div>
-                    </div>
-                    <div className="subscribe-form d-flex text-center mx-auto">
-                        <div className="input-group mb-3">
-                            <span className="input-group-text">
-                                <FiMail />
-                            </span>
-                            <input type="email" className="form-control subscribe_input shadow-none" placeholder="Enter your Email" />
-                        </div>
-                        <button className="blog_input-btn ms-md-3">Get Started</button>{" "}
-                    </div>
-                    <div className="subscribe_section___social_icons mt-5">
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            <GrFacebookOption />
-                        </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            <GrTwitter />
-                        </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            <GrGooglePlus />
-                        </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            <GrInstagram />
-                        </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
-                            <BsBehance />
-                        </a>
-                    </div>
+                    <Subscribe />
                 </div>
             </div>
             <SlideModal imageList={projectImageList} projectTitle={projectTitle} show={showModal} close={handleModalClose} />

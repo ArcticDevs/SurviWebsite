@@ -1,4 +1,4 @@
-import "../styles/Blog.css";
+import "../styles/pages/Blog.css";
 import AnimatedHeader from "../components/AnimatedHeader";
 
 import blog_1 from "../assets/Blog/blog_1.jpg"

@@ -50,13 +50,13 @@ const Navbar = () => {
                                 </ul>
                             </li> */}
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">About</Link>
+                                        <Link className="nav-link" to="/about">About</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/">Services</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">Gallery</Link>
+                                        <Link className="nav-link" to="/gallery">Gallery</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/blog">Blog</Link>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { motion } from 'framer-motion';
-import '../styles/AnimatedHeader.css';
+// import { motion } from 'framer-motion';
+import '../styles/components/AnimatedHeader.css';
 
 const AnimatedHeader = () => {
 

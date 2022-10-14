@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/Footer.css"
+import "../styles/components/Footer.css"
 import { GoLocation } from 'react-icons/go';
 import { FiPhone } from 'react-icons/fi';
 import { SiMinutemailer } from 'react-icons/si';
