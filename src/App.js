@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Blog from './pages/Blog.jsx'
 import Home from './pages/Home';
 import BlogRead from './pages/BlogRead.jsx'
+import Service from './pages/Service';
 import Gallery from './pages/Gallery';
 import About from './pages/About'
 import Footer from './components/Footer.jsx'
@@ -26,6 +27,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path="/service" element={<Service />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/post/:title" element={<BlogRead />} />
             </Routes>

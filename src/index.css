@@ -3,6 +3,7 @@
 :root {
   /* --hover-color: #1080FF; */
   --hover-color: #F1AB0A;
+  --hover-light: #ffd88e;
 }
 
 * {

@@ -231,7 +231,7 @@ const About = () => {
 				</div>
 			</div>
 			<div className="about-section-5">
-				<div className='row about-section-5--row text-center'>
+				<div className='row section_4___row text-center'>
 					{isXl ?
 						<>
 							<div className='btn_card col-lg-4'>
@@ -242,8 +242,8 @@ const About = () => {
 									<div className="underline-rightcircle"></div>
 								</div>
 								<p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
-								<a href="/" className='box-btn--wrap'>
-									<div className="box-icon">
+								<a href="/" className='section_3___service_btn'>
+									<div className="box">
 										<FiPlus />
 									</div>
 									<span>
@@ -306,8 +306,8 @@ const About = () => {
 									<div className="underline-rightcircle"></div>
 								</div>
 								<p className="card-text">Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.</p>
-								<a href="/" className='box-btn--wrap'>
-									<div className="box-icon">
+								<a href="/" className='section_3___service_btn'>
+									<div className="box">
 										<FiPlus />
 									</div>
 									<span>
