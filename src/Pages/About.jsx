@@ -230,7 +230,7 @@ const About = () => {
 					</a>
 				</div>
 			</div>
-			<div className="about-section-5">
+			{/* <div className="about-section-5">
 				<div className='row section_4___row text-center'>
 					{isXl ?
 						<>
@@ -318,7 +318,7 @@ const About = () => {
 						</>
 					}
 				</div>
-			</div>
+			</div> */}
 			<div className="about-section-6">
 				<div>
 					<h1 className='text-center section_head m-0'>Our Professionals</h1>

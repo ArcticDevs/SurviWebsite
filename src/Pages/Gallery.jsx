@@ -71,7 +71,7 @@ const Gallery = () => {
                         <div className="underline-rightcircle"></div>
                     </div>
                 </div>
-                <div className='gallery'>
+                <div className='gallery mb-5'>
                     <h1 className='text-center section_head'>Our Projects</h1>
                     <div className="underline mt-4">
                         <div className="underline-middleline"></div>
