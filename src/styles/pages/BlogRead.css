@@ -151,4 +151,17 @@
   .blog_read___section_4 {
     width: 80%;
   }
+
+  .blog_calendar_grid{
+    flex-direction: column;
+  }
+
+  .blog_calendar_head{
+    border-top-right-radius: 10px !important;
+  }
+
+  .blog_calendar_head:last-child{
+    border-top: none;
+    border-top-right-radius: 0px !important;
+  }
 }

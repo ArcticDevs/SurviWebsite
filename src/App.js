@@ -9,6 +9,7 @@ import Service from './pages/Service';
 import Gallery from './pages/Gallery';
 import About from './pages/About'
 import Footer from './components/Footer.jsx'
+import ContactUs from './pages/ContactUs';
 // const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
                 <Route path="/service" element={<Service />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/post/:title" element={<BlogRead />} />
+                <Route path="/contactus" element={<ContactUs/>} />
             </Routes>
             {/* </Suspense> */}
             <Footer />

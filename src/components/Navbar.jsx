@@ -62,7 +62,7 @@ const Navbar = () => {
                                         <Link className="nav-link" to="/blog">Blog</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/">Contact</Link>
+                                        <Link className="nav-link" to="/contactus">Contact</Link>
                                     </li>
                                     {/* {!isXl &&
                                 <li className="ms-5">
