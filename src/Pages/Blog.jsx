@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 const blogsData = [
 	{
 		id: 1,
-		title: "Survi Pristine",
-		body: "Our object in the construction of the state is the greatest happiness of the whole, and not that of any one class.",
+		title: "How to find the right real estate developer for you?",
+		body: "One of the most important financial decisions that every person must make at some point in their lives is purchasing a property.",
 		image: blog_1,
 		postImages: [blog_1, blog_2, blog_3],
 	},

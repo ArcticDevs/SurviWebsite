@@ -26,14 +26,14 @@ import { Link } from 'react-router-dom'
 const Service = () => {
     return (
         <div className='container-fluid'>
-            <div className='service-section-1'>
+            {/* <div className='service-section-1'>
                 <h1 className='text-center section_head'>Services</h1>
                 <div className="underline mt-4">
                     <div className="underline-middleline"></div>
                     <div className="underline-leftcircle"></div>
                     <div className="underline-rightcircle"></div>
                 </div>
-            </div>
+            </div> */}
             <div className='service-section-2'>
                 <h1 className='text-center section_head'>Our Services</h1>
                 <div className="underline mt-4">
