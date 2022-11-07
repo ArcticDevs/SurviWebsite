@@ -18,7 +18,7 @@
 }
 
 .section_5 {
-    padding: 100px 0 60px;
+    padding: 20px 0 60px;
 }
 
 .section_head {
@@ -417,9 +417,9 @@
     top: -80px;
     bottom: 0;
     /* box-shadow: 0 0 0 40px inset var(--hover-color); */
-    border-top: 50px solid var(--hover-color);
-    border-bottom: 50px solid var(--hover-color);
-    border-right: 50px solid var(--hover-color);
+    border-top: 40px solid var(--hover-color);
+    border-bottom: 40px solid var(--hover-color);
+    border-right: 40px solid var(--hover-color);
     /* background-color: var(--hover-color); */
     border-radius: 0 120px 120px 0;
 }

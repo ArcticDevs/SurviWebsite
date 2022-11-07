@@ -67,6 +67,8 @@ const Home = () => {
 
   const [showModal, setShowModal] = useState(false);
 
+  const [expandAmenity,setExpandAmenity] = useState({expand:false,index:-1})
+
   const handleProjectClick = (data, title) => {
     setProjectImageList(data);
     setProjectTitle(title);
@@ -105,7 +107,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-fluid home-page">
+      <div className="home-page">
         <div className="section_1">
           <div className="section_1___box">
             <h1>MOULDING A STRUCTURE FOR YOUR DREAMS.</h1>
@@ -121,7 +123,7 @@ const Home = () => {
         </div>
         <div className="section_2">
           <h1 className="text-center section_head">Our Services</h1>
-          <div className="underline mt-4">
+          <div className="underline my-4">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
@@ -192,7 +194,7 @@ const Home = () => {
         <div className="section_3">
           <div className="background_parallax"></div>
           <h1 className="text-center section_head">What We Offer</h1>
-          <div className="underline mt-4">
+          <div className="underline my-4">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
@@ -246,13 +248,13 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="section_4">
+        <div className="section_4 mt-0 mb-0">
           <div className="row section_4___row text-center">
             {isXl ? (
               <>
                 <div className="btn_card col-lg-4">
                   <h2>WHAT THEY SAY</h2>
-                  <div className="underline mt-4 mx-0 mb-0">
+                  <div className="underline my-4">
                     <div className="underline-middleline"></div>
                     <div className="underline-leftcircle"></div>
                     <div className="underline-rightcircle"></div>
@@ -349,9 +351,9 @@ const Home = () => {
             )}
           </div>
         </div>
-        <div className="section_5">
+        <div className="section_5 mt-0 mb-0">
           <h1 className="text-center section_head">How we stand apart</h1>
-          <div className="underline mt-4">
+          <div className="underline my-4">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
@@ -360,7 +362,7 @@ const Home = () => {
             <div className="service-section-4 section_3">
               <div className="container-fluid section_3___grid px-5">
                 {amenities.map((curr, index) => (
-                  index < viewMore && <div className="row d-flex gap-2 justify-content-center">
+                  index%2 === 0 && index < viewMore && <div className="row d-flex gap-2 justify-content-center">
                     <div className="card rounded-0 col-lg">
                       <img
                         src={WorkImage_1}
@@ -373,8 +375,8 @@ const Home = () => {
                           style={{ boxShadow: "inset 0 0 0 1px #c4c4c4" }}
                         >
                           <h5 className="card-title">{amenities[index].title}</h5>
-                          <p className="card-text">
-                          {amenities[index].content}
+                          <p className="card-text" style={{position:'relative',zIndex:'999'}}>
+                          {expandAmenity.expand && expandAmenity.index === index ? amenities[index].content : amenities[index].content.substring(0,170)}{expandAmenity.expand && expandAmenity.index === index ? <span className="text-secondary" onClick={() => setExpandAmenity({expand:false,index:-1})} style={{cursor:'pointer'}}>(read less)</span> : <span className="text-secondary" onClick={() => setExpandAmenity({expand:true,index:index})} style={{cursor:'pointer'}}>...read more</span>}  
                           </p>
                         </div>
                       </div>
@@ -391,8 +393,8 @@ const Home = () => {
                           style={{ boxShadow: "inset 0 0 0 1px #c4c4c4" }}
                         >
                           <h5 className="card-title">{amenities[index+1].title}</h5>
-                          <p className="card-text">
-                          {amenities[index+1].content}
+                          <p className="card-text" style={{position:'relative',zIndex:'999'}}>
+                          {expandAmenity.expand && expandAmenity.index === index+1 ? amenities[index+1].content : amenities[index+1].content.substring(0,170)}{expandAmenity.expand && expandAmenity.index === index+1 ? <span className="text-secondary" onClick={() => setExpandAmenity({expand:false,index:-1})} style={{cursor:'pointer'}}>(read less)</span> : <span className="text-secondary" onClick={() => setExpandAmenity({expand:true,index:index+1})} style={{cursor:'pointer'}}>...read more</span>}  
                           </p>
                         </div>
                       </div>

@@ -10,7 +10,7 @@
 
 .blog_read___section_3 {
   position: relative;
-  margin-top: -80px !important;
+  margin-top: -100px !important;
   display: flex;
   flex-direction: column;
   border-radius: 20px !important;
@@ -152,16 +152,20 @@
     width: 80%;
   }
 
-  .blog_calendar_grid{
-    flex-direction: column;
+  .blog_calendar_grid {
   }
 
-  .blog_calendar_head{
+  .blog_calendar_head {
+    border-top-left-radius: 10px !important;
+  }
+
+  .blog_calendar_head:last-child {
+    border-left: none;
+    border-top-left-radius: 0px !important;
     border-top-right-radius: 10px !important;
   }
 
-  .blog_calendar_head:last-child{
-    border-top: none;
-    border-top-right-radius: 0px !important;
+  .blog_calendar_head h2{
+    font-size: 18px !important;
   }
 }

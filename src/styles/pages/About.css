@@ -70,7 +70,6 @@
     padding: 100px 10vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .about-sec2-left-wrap {
@@ -126,6 +125,7 @@
 .about-sec3--head {
     padding: 100px 0;
     background-color: #f6c770;
+    color: #fff;
 }
 
 .about-sec3--tab-title {
@@ -348,7 +348,7 @@
 } */
 
 .about-section-6 {
-    padding: 250px 0 50px;
+    padding: 20px 0 50px;
 }
 
 .about-sec6--grid {

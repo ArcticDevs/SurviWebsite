@@ -173,10 +173,10 @@ const About = () => {
               WITH NO POSITIVITY, THERE IS NO HOPE; WITH NO NEGATIVITY, THERE IS
               NO IMPROVEMENT.
             </h3>
-            <div className="about-sec2--badge">
+            {/* <div className="about-sec2--badge">
               <h4>Find out What Our Clients Say About us?</h4>
               <Link to="/about">Do want to Learn More</Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="about-sec2-right">
@@ -194,10 +194,10 @@ const About = () => {
       <div className="about-section-3 mb-5">
         <div className="about-sec3--head">
           <h1 className="text-center section_head m-0">Our Core Features</h1>
-          <div className="underline mt-4">
-            <div className="underline-middleline"></div>
-            <div className="underline-leftcircle"></div>
-            <div className="underline-rightcircle"></div>
+          <div className="underline mt-4" >
+            <div className="underline-middleline underline-when-yellowbg"></div>
+            <div className="underline-leftcircle underline-when-yellowbg"></div>
+            <div className="underline-rightcircle underline-when-yellowbg"></div>
           </div>
         </div>
         <div className="about-sec3--tabs-wrap">
@@ -379,7 +379,7 @@ const About = () => {
 			</div> */}
       <div className="about-section-6">
         <div>
-          <h1 className="text-center section_head m-0">Our Professionals</h1>
+          <h1 className="text-center section_head">Our Professionals</h1>
           <div className="underline mt-4">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>

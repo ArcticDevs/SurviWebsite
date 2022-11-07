@@ -104,11 +104,11 @@ const ContactUs = () => {
       </div>
       <div className="service-section-5 ms-2">
         <div className="service-sec5-header">
-          <h1 className="text-center section_head">WHY CHOOSING US?</h1>
+          <h1 className="text-center section_head" style={{color:'#fff'}}>WHY CHOOSING US?</h1>
           <div className="underline mt-4">
-            <div className="underline-middleline"></div>
-            <div className="underline-leftcircle"></div>
-            <div className="underline-rightcircle"></div>
+            <div className="underline-middleline underline-when-yellowbg"></div>
+            <div className="underline-leftcircle underline-when-yellowbg"></div>
+            <div className="underline-rightcircle underline-when-yellowbg"></div>
           </div>
         </div>
         <div className="service-sec5--block">
@@ -134,15 +134,15 @@ const ContactUs = () => {
               <h5>Coffee</h5>
             </div>
           </div>
-          <div className="service-sec5--block-mid">
+          {/* <div className="service-sec5--block-mid">
             <div className="block-mid">
               <h3>
                 Find out What Our Clients Say About us?{" "}
                 <Link to="/">Do want to Learn More</Link>
               </h3>
             </div>
-          </div>
-          <div className="service-sec5--block-end">
+          </div> */}
+          {/* <div className="service-sec5--block-end">
             <div className="card block-end">
               <div className="card-head">
                 <MdFormatQuote />
@@ -185,7 +185,7 @@ const ContactUs = () => {
                 <h2 className="card-profile-job">CEO at Compaxit</h2>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

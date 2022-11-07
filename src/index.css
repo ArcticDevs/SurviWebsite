@@ -72,7 +72,7 @@ nav {
 .underline {
   position: relative;
   width: 180px;
-  margin: 30px auto;
+  margin: 30px auto !important;
 }
 
 .underline-middleline {
@@ -98,6 +98,11 @@ nav {
   background: var(--hover-color) none repeat scroll 0% 0% / auto padding-box border-box;
   border-radius: 100px;
 }
+ 
+.underline-when-yellowbg{
+  background: #fff none repeat scroll 0% 0% / auto padding-box border-box;
+}
+
 .navbar-toggler {
   padding-right: 20px !important;
 }
