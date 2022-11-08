@@ -121,9 +121,9 @@ const Home = () => {
           <div className="parallax"></div>
           {/* <img src={HomeImage} alt="home_image" /> */}
         </div>
-        <div className="section_2">
-          <h1 className="text-center section_head">Our Services</h1>
-          <div className="underline my-4">
+        <div className="section_2 ">
+          <h1 className="text-center section_head space_below_title">Our Services</h1>
+          <div className="underline my-4 space_below_title">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
@@ -199,7 +199,7 @@ const Home = () => {
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
           </div>
-          <div className="container section_3___grid">
+          <div className="container section_3___grid mt-5">
             <div className="row d-flex gap-4 justify-content-center">
               <div className="card rounded-0 col-lg">
                 <img
@@ -351,14 +351,14 @@ const Home = () => {
             )}
           </div>
         </div>
-        <div className="section_5 mt-0 mb-0">
+        <div className="section_5">
           <h1 className="text-center section_head">How we stand apart</h1>
-          <div className="underline my-4">
+          <div className="underline mt-4">
             <div className="underline-middleline"></div>
             <div className="underline-leftcircle"></div>
             <div className="underline-rightcircle"></div>
           </div>
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center" style={{marginTop:'-25px'}}>
             <div className="service-section-4 section_3">
               <div className="container-fluid section_3___grid px-5">
                 {amenities.map((curr, index) => (

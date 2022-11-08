@@ -14,7 +14,7 @@
 .section_2,
 .section_3,
 .section_4 {
-    padding: 60px 0px;
+    padding: 40px 0px;
 }
 
 .section_5 {
@@ -70,7 +70,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 30px 100px;
+    padding: 20px 100px;
     gap: 25px 25px;
 }
 
@@ -267,7 +267,6 @@
     position: relative;
     z-index: 1;
     background: none;
-    padding: 30px 6vw;
 }
 
 .section_3___grid .card-img-top {
