@@ -131,8 +131,8 @@
     .blog-head-left-2,
     .blog-head-right-1,
     .blog-head-right-2 {
-        width: 100px;
+        width: 50px;
         height: 100px;
-        background-size: 100px;
+        background-size: 50px;
     }
 }

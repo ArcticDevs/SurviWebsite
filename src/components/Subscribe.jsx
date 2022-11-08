@@ -20,7 +20,7 @@ const Subscribe = () => {
           Owning a home is a keystone of wealth… both financial affluence and
           emotional security.
         </p>
-        <div className="underline mt-2 mb-5">
+        <div className="underline mt-2">
           <div className="underline-middleline"></div>
           <div className="underline-leftcircle"></div>
           <div className="underline-rightcircle"></div>

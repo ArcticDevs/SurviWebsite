@@ -23,7 +23,7 @@ export default function useBreakpoints() {
         isSm: useMediaQuery("(max-width: 600px)"),
         // isTm: useMediaQuery("(max-width: 700px)"),
         isMd: useMediaQuery("(max-width: 768px)"),
-        isLg: useMediaQuery("(max-width: 1010px)"),
+        isLg: useMediaQuery("(max-width: 1024px)"),
         isXl: useMediaQuery("(max-width: 1200px)"),
         isXX: useMediaQuery("(max-width: 1400px)"),
     };

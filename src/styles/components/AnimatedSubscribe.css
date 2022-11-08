@@ -5,12 +5,13 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .u-left,
 .u-right {
   position: absolute;
+  z-index: -100 !important;
   display: block;
   width: 350px;
   height: 350px;
@@ -79,29 +80,30 @@
 @media only screen and (max-width: 768px) {
   .subs-container {
     width: 130vw;
+    z-index: 100 !important;
   }
 
   .u-left,
   .u-right {
     background-size: 100px;
-    z-index: -1;
+    z-index: 100 !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .subs-container {
     width: 160vw;
+    z-index: -1 !important;
   }
 }
 
 @media only screen and (max-width: 350px) {
   .subs-container {
-    width: 180vw;
+    width: 193vw;
   }
 
   .u-left,
   .u-right {
-    background-size: 80px;
-    z-index: -1;
+    background-size: 50px;
   }
 }

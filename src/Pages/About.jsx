@@ -23,6 +23,7 @@ import {
 } from "react-icons/gr";
 import { BsBehance, BsWhatsapp } from "react-icons/bs";
 import Subscribe from "../components/Subscribe";
+import Navbar from "../components/NavbarCustom";
 
 const tabGridData = [
   {
@@ -150,6 +151,7 @@ const About = () => {
   const { isXl } = useBreakpoints();
 
   return (
+    <>
     <div className="container-fluid about-page">
       <div className="about-section-1-wrap">
         <div className="about-section-1">
@@ -236,7 +238,7 @@ const About = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. enim
                   in eros elementum
                 </p>
-                <Link to="#">Read More</Link>
+                {/* <Link to="#">Read More</Link> */}
               </div>
             </div>
             <div className="about-sec3-card card">
@@ -247,7 +249,7 @@ const About = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. enim
                   in eros elementum
                 </p>
-                <Link to="#">Read More</Link>
+                {/* <Link to="#">Read More</Link> */}
               </div>
             </div>
             <div className="about-sec3-card card">
@@ -258,7 +260,7 @@ const About = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. enim
                   in eros elementum
                 </p>
-                <Link to="#">Read More</Link>
+                {/* <Link to="#">Read More</Link> */}
               </div>
             </div>
           </div>
@@ -460,6 +462,7 @@ const About = () => {
       </div>
       <Subscribe />
     </div>
+    </>
   );
 };
 

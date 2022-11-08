@@ -1,3 +1,8 @@
+.about-page{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .about-section-1-wrap {
     position: relative;
     display: block;
@@ -14,7 +19,7 @@
     height: 400px;
     padding: 120px 10vw;
     gap: 20px;
-    background-color: #f6c770;
+    background-color: #F1AB0A;
 }
 
 .about-sec1-content {
@@ -124,7 +129,7 @@
 
 .about-sec3--head {
     padding: 100px 0;
-    background-color: #f6c770;
+    background-color: #F1AB0A;
     color: #fff;
 }
 

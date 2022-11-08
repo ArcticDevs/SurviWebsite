@@ -15,7 +15,7 @@ const ContactUs = () => {
   const { isMd, isTm, isSm, isXs } = useBreakpoints();
 
   return (
-    <div className="row container-fluid">
+    <div className="row container-fluid mb-5">
       <div className="blog_section_1">
         <h1
           className="text-center section_head"
@@ -43,8 +43,8 @@ const ContactUs = () => {
             <BsClockHistory className="calendar_icon" />
             <h2>CALL US</h2>
             <p className="text-center">
-              PHONE: +1 (765) 536 72823 <br />
-              FAX: +1 (735) 465 3245
+              <span style={{cursor:'pointer'}}>PHONE: +1 (765) 536 72823</span>  <br />
+              <span style={{cursor:'pointer'}}>FAX: +1 (735) 465 3245</span> 
             </p>
           </div>
         </div>
@@ -101,93 +101,7 @@ const ContactUs = () => {
 
           <button className="contact-us-btn my-3">Submit now</button>
         </div>
-      </div>
-      <div className="service-section-5 ms-2">
-        <div className="service-sec5-header">
-          <h1 className="text-center section_head" style={{color:'#fff'}}>WHY CHOOSING US?</h1>
-          <div className="underline mt-4">
-            <div className="underline-middleline underline-when-yellowbg"></div>
-            <div className="underline-leftcircle underline-when-yellowbg"></div>
-            <div className="underline-rightcircle underline-when-yellowbg"></div>
-          </div>
-        </div>
-        <div className="service-sec5--block">
-          <div className="service-sec5--block-head">
-            <div className="block-item">
-              <img src={service_grid_1} alt="" />
-              <h3>325</h3>
-              <h5>Clients</h5>
-            </div>
-            <div className="block-item">
-              <img src={service_grid_2} alt="" />
-              <h3>2056</h3>
-              <h5>Projects</h5>
-            </div>
-            <div className="block-item">
-              <img src={service_grid_3} alt="" />
-              <h3>560</h3>
-              <h5>Workers</h5>
-            </div>
-            <div className="block-item">
-              <img src={service_grid_4} alt="" />
-              <h3>156</h3>
-              <h5>Coffee</h5>
-            </div>
-          </div>
-          {/* <div className="service-sec5--block-mid">
-            <div className="block-mid">
-              <h3>
-                Find out What Our Clients Say About us?{" "}
-                <Link to="/">Do want to Learn More</Link>
-              </h3>
-            </div>
-          </div> */}
-          {/* <div className="service-sec5--block-end">
-            <div className="card block-end">
-              <div className="card-head">
-                <MdFormatQuote />
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole
-                </p>
-                <img src={service_profile_1} alt="" />
-                <h2 className="card-profile-name">SARA MORDOC</h2>
-                <h2 className="card-profile-job">CEO at Compaxit</h2>
-              </div>
-            </div>
-            <div className="card block-end">
-              <div className="card-head">
-                <MdFormatQuote />
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole
-                </p>
-                <img src={service_profile_1} alt="" />
-                <h2 className="card-profile-name">SARA MORDOC</h2>
-                <h2 className="card-profile-job">CEO at Compaxit</h2>
-              </div>
-            </div>
-            <div className="card block-end">
-              <div className="card-head">
-                <MdFormatQuote />
-              </div>
-              <div className="card-body">
-                <p className="card-text">
-                  Our object in the construction of the state is the greatest
-                  happiness of the whole
-                </p>
-                <img src={service_profile_1} alt="" />
-                <h2 className="card-profile-name">SARA MORDOC</h2>
-                <h2 className="card-profile-job">CEO at Compaxit</h2>
-              </div>
-            </div>
-          </div> */}
-        </div>
-      </div>
+      </div>     
     </div>
   );
 };
